@@ -99,5 +99,11 @@ function handleDrag(x, y) {
     startY = y;
   }
 
+
+// スクロール完全無効化
+document.body.addEventListener('touchmove', function(e) {
+  e.preventDefault();
+}, { passive: false });
+
   drawImage(currentY, currentX);
 }
