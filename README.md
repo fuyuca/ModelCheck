@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>3Dスプライトビューア</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="viewer">
+    <canvas id="canvas"></canvas>
+  </div>
+  <script src="viewer.js"></script>
+</body>
+</html>
