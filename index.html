@@ -6,18 +6,38 @@
   <link rel="stylesheet" href="styles.css">
 
 <style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* ←これがポイント！ */
-    touch-action: none; /* スワイプ時のスクロールも防ぐ */
-  }
+body {
+  margin: 0;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  canvas {
-    display: block;
-    margin: auto;
-    background-color: #000;
-  }
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+
+#viewer {
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+canvas {
+  background-color: #222;
+  touch-action: none; /* スワイプ無効 */
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+}
 </style>
 
 </head>
