@@ -100,10 +100,13 @@ function handleDrag(x, y) {
   }
 
 
-// スクロール完全無効化
 document.body.addEventListener('touchmove', function(e) {
-  e.preventDefault();
+  if (e.touches.length === 1) {
+    // 1本指のときだけスクロールを防ぐ（＝スワイプ）
+    e.preventDefault();
+  }
 }, { passive: false });
+
 
   drawImage(currentY, currentX);
 }
