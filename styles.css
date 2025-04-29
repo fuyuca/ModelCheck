@@ -25,7 +25,7 @@ canvas {
   background-color: #222;
   touch-action: none; /* スワイプ無効 */
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 800px;
   display: block;
   margin: auto;
